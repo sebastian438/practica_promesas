@@ -53,6 +53,7 @@ const getApi = () => {
  */
 
 const funcionPintar = (usuario) => {
+    lista.innerHTML = "";
     const li00 = document.createElement("LI");
     const li01 = document.createElement("LI");
 
