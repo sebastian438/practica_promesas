@@ -11,14 +11,16 @@ button.addEventListener("click", (ev) => {
 const api = () => {
     const isOk = true;
     const promesa = new Promise((resolve, reject) => {
-        if (isOk) {
-            resolve({
-                nombre: "Pepe",
-                email: "pepe@gmail.com"
-            });
-        } else {
-            reject("Error");
-        }
+        setTimeout(() => {
+            if (isOk) {
+                resolve({
+                    nombre: "Pepe",
+                    email: "pepe@gmail.com"
+                });
+            } else {
+                reject("Error");
+            }
+        }, 2000);
     });
     return promesa;
 }
